@@ -1,0 +1,102 @@
+/* ═══════════════════════════════════════════
+   TTAM – Global Styles
+   Table Tennis Association of Maldives
+═══════════════════════════════════════════ */
+
+:root {
+  /* Brand */
+  --green:        #1a6b1a;
+  --green-light:  #2d8a2d;
+  --green-dark:   #0f4a0f;
+  --green-pale:   #e8f5e8;
+  --green-mid:    #4caf50;
+  --accent:       #00c853;
+
+  /* Neutrals */
+  --white:        #ffffff;
+  --off-white:    #f7f9f7;
+  --gray-50:      #f4f4f4;
+  --gray-100:     #e8e8e8;
+  --gray-200:     #d0d0d0;
+  --gray-400:     #9a9a9a;
+  --gray-600:     #5a5a5a;
+  --gray-800:     #2a2a2a;
+
+  /* Text */
+  --text:         #1a1a1a;
+  --text-muted:   #6b6b6b;
+
+  /* Semantic */
+  --success:      #2e7d32;
+  --success-bg:   #e8f5e9;
+  --warning:      #f57f17;
+  --warning-bg:   #fff8e1;
+  --danger:       #c62828;
+  --danger-bg:    #ffebee;
+  --info:         #1565c0;
+  --info-bg:      #e3f2fd;
+
+  /* UI */
+  --border:       rgba(0, 0, 0, 0.08);
+  --border-mid:   rgba(0, 0, 0, 0.14);
+  --shadow-xs:    0 1px 2px rgba(0,0,0,0.05);
+  --shadow-sm:    0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow:       0 4px 16px rgba(0,0,0,0.08);
+  --shadow-lg:    0 8px 32px rgba(0,0,0,0.14);
+
+  /* Layout */
+  --radius-xs:    6px;
+  --radius:       10px;
+  --radius-md:    12px;
+  --radius-lg:    16px;
+  --radius-xl:    20px;
+  --nav-h:        64px;
+  --sidebar-w:    240px;
+
+  /* Typography */
+  --font-body:    'DM Sans', system-ui, sans-serif;
+  --font-heading: 'Space Grotesk', system-ui, sans-serif;
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  background: var(--off-white);
+  color: var(--text);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+img, svg { display: block; max-width: 100%; }
+button { font-family: var(--font-body); cursor: pointer; }
+a { color: inherit; }
+input, select, textarea { font-family: var(--font-body); }
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--gray-50); }
+::-webkit-scrollbar-thumb { background: var(--gray-200); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--gray-400); }
+
+/* ── Utility ── */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+.truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.gap-2 { gap: 0.5rem; }
+.gap-3 { gap: 0.75rem; }
+.gap-4 { gap: 1rem; }
+.w-full { width: 100%; }
+.text-muted { color: var(--text-muted); }
+.text-sm { font-size: 13px; }
+.text-xs { font-size: 11px; }
+.font-semibold { font-weight: 600; }
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-4 { margin-top: 1rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mb-6 { margin-bottom: 1.5rem; }

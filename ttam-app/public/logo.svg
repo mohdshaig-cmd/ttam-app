@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Background circle -->
+  <circle cx="60" cy="60" r="58" fill="#0f4a0f" stroke="#1a6b1a" stroke-width="2"/>
+  
+  <!-- Ping pong paddle -->
+  <ellipse cx="62" cy="34" rx="18" ry="20" fill="#2d8a2d" stroke="#fff" stroke-width="2"/>
+  
+  <!-- Paddle handle -->
+  <rect x="55" y="52" width="14" height="22" rx="4" fill="#fff"/>
+  
+  <!-- Table (horizontal bar) -->
+  <rect x="18" y="74" width="84" height="10" rx="3" fill="#fff"/>
+  
+  <!-- Table legs -->
+  <rect x="26" y="84" width="7" height="18" rx="2" fill="#fff"/>
+  <rect x="87" y="84" width="7" height="18" rx="2" fill="#fff"/>
+  
+  <!-- Ping pong ball -->
+  <circle cx="88" cy="28" r="8" fill="#fff" stroke="#e0e0e0" stroke-width="1"/>
+  <path d="M 82 26 Q 88 22 94 26" fill="none" stroke="#e0e0e0" stroke-width="1"/>
+</svg>
