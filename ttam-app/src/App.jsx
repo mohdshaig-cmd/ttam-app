@@ -15,6 +15,7 @@ import Booking from './pages/Booking'
 import Announcements from './pages/Announcements'
 import { MyBookings, Members, Guests, Rankings } from './pages/MembersPages'
 import { Payments, Invoices } from './pages/PaymentPages'
+import { Expenses } from './pages/ExpensePages'
 import { Tournaments, Notifications, About, Exco, Champions, Contact } from './pages/InfoPages'
 import { AdminPanel, Profile, Settings } from './pages/AdminPages'
 
@@ -73,6 +74,7 @@ export default function App() {
           <Route path="rankings"       element={<Rankings />} />
           <Route path="payments"       element={<Payments />} />
           <Route path="invoices"       element={<Invoices />} />
+          <Route path="expenses"       element={<Expenses />} />
           <Route path="notifications"  element={<Notifications />} />
           <Route path="announcements"  element={<Announcements />} />
           <Route path="about"          element={<About />} />

@@ -2,7 +2,7 @@ import { NavLink, useNavigate } from 'react-router-dom'
 import {
   Home, CalendarDays, ClipboardList, Users, UserCheck,
   Trophy, BarChart2, CreditCard, FileText, Bell,
-  Info, UserCog, Medal, Phone, ShieldCheck, User, LogOut, X, Megaphone,
+  Info, UserCog, Medal, Phone, ShieldCheck, User, LogOut, X, Megaphone, Receipt,
 } from 'lucide-react'
 import { useAuth } from '../../hooks/useAuth'
 import toast from 'react-hot-toast'
@@ -30,6 +30,7 @@ const navSections = [
     items: [
       { to: '/payments', icon: CreditCard, label: 'Payments' },
       { to: '/invoices', icon: FileText, label: 'Invoices' },
+      { to: '/expenses', icon: Receipt, label: 'Expenses' },
     ],
   },
   {
